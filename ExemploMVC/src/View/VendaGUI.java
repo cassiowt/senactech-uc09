@@ -1,8 +1,15 @@
-package View;
+package view;
 
 import javax.swing.*;
+import javax.swing.text.View;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import controller.VendaController;
+import model.Cliente;
+import model.Produto;
+import view.VendaView;
 
 public class VendaGUI extends JFrame {
     private JTextField nomeProdutoTextField;
@@ -10,6 +17,13 @@ public class VendaGUI extends JFrame {
     private JTextField nomeClienteTextField;
     private JTextField cpfClienteTextField;
     private JButton venderButton;
+    private VendaController vendaController;
+
+    // Instância de VendaController
+        Produto produto = new Produto("Produto 1", 10.0); // Modelo de Produto pré-definido
+        Cliente cliente = new Cliente("Cliente 1", "123.456.789-00"); // Modelo de Cliente pré-definido
+        vendaController = new VendaController(produto, view);
+
 
     public VendaGUI() {
         // Configuração da janela
@@ -50,22 +64,22 @@ public class VendaGUI extends JFrame {
     }
 
     private void realizarVenda() {
+        // Obter os valores dos campos de texto
         String nomeProduto = nomeProdutoTextField.getText();
-        String valorProduto = valorProdutoTextField.getText();
+        double valorProduto = Double.parseDouble(valorProdutoTextField.getText());
         String nomeCliente = nomeClienteTextField.getText();
         String cpfCliente = cpfClienteTextField.getText();
 
-        // Aqui você incluiria a lógica para processar a venda
-        // Por exemplo, validar os dados e atualizar o banco de dados ou modelo
-        
-        JOptionPane.showMessageDialog(this, 
-            "Venda Realizada!\n" +
-            "Produto: " + nomeProduto + "\n" +
-            "Valor: " + valorProduto + "\n" +
-            "Cliente: " + nomeCliente + "\n" +
-            "CPF: " + cpfCliente
-        );
+        // Criar instâncias de Produto e Cliente com os valores obtidos
+        Produto produto = new Produto(nomeProduto, valorProduto);
+        Cliente cliente = new Cliente(nomeCliente, cpfCliente);
+
+        // Tenta realizar a venda usando o controller
+        if (vendaController.realizarVenda(produto.getNome() , produto.getPreco(),cliente.getNome(), 1)) { // Assumindo a quantidade como 1 para simplificar
+            // Atualizar a GUI conforme necessário
+        }
     }
+
 
     public static void main(String[] args) {
         // Deve ser executado dentro do Event Dispatch Thread
