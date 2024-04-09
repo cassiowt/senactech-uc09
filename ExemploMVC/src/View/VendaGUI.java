@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import controller.VendaController;
 import model.Cliente;
 import model.Produto;
+import model.Venda;
 import view.VendaView;
 
 public class VendaGUI extends JFrame {
@@ -24,9 +25,11 @@ public class VendaGUI extends JFrame {
 
 
     public VendaGUI() {
-        //Produto produto = new Produto("Produto 1", 10.0); // Modelo de Produto pré-definido
-        //Cliente cliente = new Cliente("Cliente 1", "123.456.789-00");// Modelo de Cliente pré-definido
-       // this.vendaController = new VendaController(produto, view);
+        Venda venda = new Venda(); // Modelo de Venda pré-definido
+       // Produto produto = new Produto(); // Modelo de Produto pré-definido
+        VendaView view = new VendaView();
+       // Cliente cliente = new Cliente();// Modelo de Cliente pré-definido
+        this.vendaController = new VendaController(venda, view);
         // Configuração da janela
        
         setTitle("Sistema de Vendas");
