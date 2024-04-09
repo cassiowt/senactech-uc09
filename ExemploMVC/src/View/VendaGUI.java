@@ -20,13 +20,15 @@ public class VendaGUI extends JFrame {
     private VendaController vendaController;
 
     // Instância de VendaController
-        Produto produto = new Produto("Produto 1", 10.0); // Modelo de Produto pré-definido
-        Cliente cliente = new Cliente("Cliente 1", "123.456.789-00"); // Modelo de Cliente pré-definido
-        vendaController = new VendaController(produto, view);
+        
 
 
     public VendaGUI() {
+        //Produto produto = new Produto("Produto 1", 10.0); // Modelo de Produto pré-definido
+        //Cliente cliente = new Cliente("Cliente 1", "123.456.789-00");// Modelo de Cliente pré-definido
+       // this.vendaController = new VendaController(produto, view);
         // Configuração da janela
+       
         setTitle("Sistema de Vendas");
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

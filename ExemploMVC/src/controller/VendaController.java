@@ -29,7 +29,7 @@ public class VendaController {
 
         // Se passar pelas validações, cria as instâncias de Produto e Cliente
         Produto produto = new Produto(nomeProduto, valorProduto);
-        Cliente cliente = new Cliente(nomeCliente, cpfCliente);
+        Cliente cliente = new Cliente(nomeCliente, "123.456.789-00");
         
         // Configura o modelo de Venda e supõe que a venda é sempre bem-sucedida
         venda.setProduto(produto);
