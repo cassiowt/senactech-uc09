@@ -8,4 +8,6 @@ public class Slide {
 
 	private int numeroPaginas;
 
+	private Curso curso;
+
 }

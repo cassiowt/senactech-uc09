@@ -10,4 +10,6 @@ public class PerfilAcesso {
 
 	private Usuario[] usuarios;
 
+	private Usuario usuario;
+
 }

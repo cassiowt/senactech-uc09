@@ -10,4 +10,6 @@ public class MaterialDidatico {
 
 	private boolean estaCompleto;
 
+	private Curso curso;
+
 }

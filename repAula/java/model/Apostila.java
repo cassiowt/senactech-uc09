@@ -8,6 +8,6 @@ public class Apostila {
 
 	private int numeroPaginas;
 
-
+	private Curso curso;
 
 }
