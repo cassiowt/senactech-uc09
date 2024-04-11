@@ -41,9 +41,9 @@ public class Apostila {
 		this.numeroPaginas = numeroPaginas;
 	}
 
-    @Override
-    public String toString() {
-        return "Apostila [nome=" + nome + ", curso=" + curso + ", numeroPaginas=" + numeroPaginas + "]";
-    }
+	@Override
+	public String toString() {
+		return "Apostila [nome=" + nome + ", curso=" + curso + ", numeroPaginas=" + numeroPaginas + "]";
+	}
 
 }

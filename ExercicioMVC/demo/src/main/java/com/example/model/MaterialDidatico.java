@@ -54,10 +54,10 @@ public class MaterialDidatico {
 		this.curso = curso;
 	}
 
-    @Override
-    public String toString() {
-        return "MaterialDidatico [dataEntrega=" + dataEntrega + ", dataRevisao=" + dataRevisao + ", estaCompleto="
-                + estaCompleto + ", curso=" + curso + "]";
-    }
+	@Override
+	public String toString() {
+		return "MaterialDidatico [dataEntrega=" + dataEntrega + ", dataRevisao=" + dataRevisao + ", estaCompleto="
+				+ estaCompleto + ", curso=" + curso + "]";
+	}
 
 }

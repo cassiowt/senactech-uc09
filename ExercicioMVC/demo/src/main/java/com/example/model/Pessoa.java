@@ -11,6 +11,10 @@ public class Pessoa {
 
 	private TipoPessoa tipoPessoa;
 
+	public Pessoa(String nome) {
+		this.nome = nome;
+	}
+
 	public Pessoa(String nome, String email, TipoPessoa tipoPessoa) {
 		this.nome = nome;
 		this.email = email;

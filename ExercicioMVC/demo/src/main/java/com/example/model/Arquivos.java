@@ -51,5 +51,5 @@ public class Arquivos {
 	public void setRepositorio(Repositorio repositorio) {
 		this.repositorio = repositorio;
 	}
-	
+
 }
