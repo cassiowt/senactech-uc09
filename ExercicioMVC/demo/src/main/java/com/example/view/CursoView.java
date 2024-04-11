@@ -22,6 +22,10 @@ public class CursoView extends JFrame {
     }
 
     private void initUI() {
+        // Adicionar um painel de 400x400
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(400, 400));
+
         nomeCursoField = new JTextField(20);
         nomeResponsavelField = new JTextField(20);
 
@@ -34,6 +38,7 @@ public class CursoView extends JFrame {
         });
 
         setLayout(new FlowLayout());
+        add(panel); // Adicionar o painel à janela
         add(new JLabel("Nome do Curso:"));
         add(nomeCursoField);
         add(new JLabel("Nome do Responsável:"));
