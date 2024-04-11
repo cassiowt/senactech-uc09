@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "demo/src/main/java/com"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
