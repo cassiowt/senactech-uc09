@@ -1,9 +1,9 @@
-package example.controller;
+package com.example.controller;
 
-import example.model.Curso;
-import example.model.Pessoa;
-import example.model.Slide;
-import example.model.Apostila;
+import com.example.model.Curso;
+import com.example.model.Pessoa;
+import com.example.model.Slide;
+import com.example.model.Apostila;
 import java.util.List;
 
 public class CursoController {

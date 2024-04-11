@@ -1,7 +1,7 @@
-package example.view;
+package com.example.view;
 
-import example.controller.CursoController;
-import example.model.Pessoa;
+import com.example.controller.CursoController;
+import com.example.model.Pessoa;
 
 import javax.swing.*;
 import java.awt.*;
