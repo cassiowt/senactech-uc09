@@ -98,7 +98,8 @@ public class MainView extends JFrame {
     }
 
     private void showSlides() {
-        setContent("Slides");
+        SlideView slideView = new SlideView(null);
+        setContentPanel(slideView);
     }
 
     private void showUsuario() {
