@@ -9,11 +9,13 @@ public class RoundedButton extends JButton {
 
     public RoundedButton(String label) {
         super(label);
+        setFont(new Font("Arial", Font.BOLD, 14));
+        setForeground(Color.WHITE); // Cor do texto
+        setBackground(new Color(0, 123, 255)); // Cor de fundo azul (Bootstrap primary color)
         setOpaque(false);
         setContentAreaFilled(false);
         setFocusPainted(false);
-        setForeground(Color.WHITE);
-        setBackground(new Color(0, 123, 255)); // Cor azul similar ao Bootstrap
+        setBorderPainted(false);
     }
 
     @Override
