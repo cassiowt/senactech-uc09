@@ -1,6 +1,9 @@
 package com.example.view;
 
 import javax.swing.*;
+
+import com.example.model.Slide;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -98,7 +101,8 @@ public class MainView extends JFrame {
     }
 
     private void showSlides() {
-        SlideView slideView = new SlideView(null);
+        Slide slide = new Slide();
+        SlideView slideView = new SlideView(slide);
         setContentPanel(slideView);
     }
 

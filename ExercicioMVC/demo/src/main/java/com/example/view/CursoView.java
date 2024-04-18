@@ -1,9 +1,7 @@
 package com.example.view;
 
 import com.example.controller.CursoController;
-import com.example.model.Pessoa;
-import com.example.styles.FontAwesome;
-import com.example.styles.StyledButton;
+import com.example.model.Slide;
 import com.example.components.*;
 
 import javax.swing.*;
@@ -90,12 +88,7 @@ public class CursoView extends JPanel {
 
     private void openAddSlideWindow() {
         // Criando uma nova janela para adicionar slides
-        JFrame addSlideFrame = new JFrame("Adicionar Slide");
-        addSlideFrame.setSize(300, 200);
-        addSlideFrame.setLayout(new FlowLayout());
-        addSlideFrame.add(new JLabel("Insira os detalhes do slide aqui."));
-    
-        addSlideFrame.setLocationRelativeTo(null); // Centraliza a janela
-        addSlideFrame.setVisible(true);
+        Slide slide = new Slide();
+        SlideView slideView = new SlideView(slide);
     }
 }
