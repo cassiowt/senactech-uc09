@@ -16,10 +16,20 @@ public class Curso {
 	public Curso() {
 	}
 
+	public Curso(String nome) {
+		this.nome = nome;
+	}
+
 	public Curso(String nome, Pessoa responsavel, Collection<Slide> slides, List<Apostila> apostilas) {
 		this.nome = nome;
 		this.responsavel = responsavel;
 		this.slides = slides;
+		this.apostilas = apostilas;
+	}
+
+	public Curso(String nomeCurso, String nomeResponsavel, String apostila) {
+		this.nome = nome;
+		this.responsavel = responsavel;
 		this.apostilas = apostilas;
 	}
 

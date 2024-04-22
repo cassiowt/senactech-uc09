@@ -10,10 +10,13 @@ public class Slide {
 
 	public Slide() {
 	}
-
-	public Slide(String nome, Curso curso, int numeroPaginas) {
+	
+	public Slide(String nomeCurso) {
+        this.curso = new Curso(nomeCurso); // Aqui, usamos o nome do curso para inicializar o nome do slide por simplificação
+    }
+	public Slide(String nome, String string, int numeroPaginas) {
 		this.nome = nome;
-		this.curso = curso;
+		this.curso = string;
 		this.numeroPaginas = numeroPaginas;
 	}
 

@@ -37,6 +37,7 @@ public class SlideView extends JPanel {
  
         nomeTextField.setText(slide.getNome());
         cursoComboBox = new JComboBox<>();  // Assumindo que você tem uma lista de cursos disponível
+        cursoComboBox.setSelectedItem(slide.getCurso());
         loadCursos(cursoComboBox);
         numeroPaginasTextField = new JTextField(20);
         numeroPaginasTextField.setText(Integer.toString(slide.getNumeroPaginas()));
@@ -57,8 +58,9 @@ public class SlideView extends JPanel {
     private void loadCursos(JComboBox<Curso> comboBox) {
         // Supondo que você tenha uma lista ou método para recuperar cursos
         // Por exemplo:
-        // comboBox.addItem(new Curso("Matemática"));
-        // comboBox.addItem(new Curso("Ciência"));
+        comboBox.addItem(new Curso(slide.getCurso().getNome()));
+        comboBox.addItem(new Curso("Matemática"));
+        comboBox.addItem(new Curso("Ciência"));
         // Defina aqui a seleção correta
         comboBox.setSelectedItem(slide.getCurso());
     }

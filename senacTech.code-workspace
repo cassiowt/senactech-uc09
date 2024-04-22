@@ -5,10 +5,20 @@
 		},
 		{
 			"path": "../../Docker/mysql"
+		},
+		{
+			"path": "../../Desktop/SenacTech"
+		},
+		{
+			"path": "demoJpa"
 		}
 	],
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic",
-		"java.debug.settings.onBuildFailureProceed": true
+		"java.debug.settings.onBuildFailureProceed": true,
+		"java.project.sourcePaths": [
+			"src/main/java/com/example/demo/model",
+			"src/main/java"
+		]
 	}
 }
